@@ -43,7 +43,7 @@ jobs:
         uses: anthropics/claude-code-action@beta
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          allowed_tools: "Bash,Glob,Grep,Read,Edit,Write,TodoWrite"
+          allowed_tools: "Bash(npm:*),Bash(npx:*),Bash(sqlite3:*),Bash(cat:*),Bash(ls:*),Glob,Grep,Read,Edit,Write,TodoWrite,mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_type,mcp__playwright__browser_navigate,mcp__playwright__browser_wait,mcp__playwright__browser_tab_list,mcp__playwright__browser_tab_new,mcp__playwright__browser_tab_select,mcp__playwright__browser_tab_close,mcp__playwright__browser_select_option,mcp__playwright__browser_hover,mcp__playwright__browser_drag,mcp__playwright__browser_press_key,mcp__playwright__browser_scroll,mcp__playwright__browser_resize,mcp__playwright__browser_handle_dialog,mcp__playwright__browser_file_upload,mcp__playwright__browser_pdf_save,mcp__playwright__browser_screen_capture,mcp__playwright__browser_console_messages,mcp__playwright__browser_network_requests"
           custom_instructions: |
             The project is already set up with all dependencies installed.
             The server is already running at localhost:3000. Logs from it
