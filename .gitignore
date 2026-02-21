@@ -46,6 +46,10 @@ next-env.d.ts
 # generated files
 /src/generated/prisma
 
+# claude code
+.claude/settings.local.json
+claude-read.log
+
 # database
 /prisma/dev.db
 /prisma/dev.db-journal
