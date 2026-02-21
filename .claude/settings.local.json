@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(sqlite3:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Glob",
+      "Grep",
+      "Read",
+      "Edit",
+      "Write",
+      "TodoWrite",
+      {
+        "matcher": "mcp__playwright__browser_*"
+      }
+    ],
+    "deny": []
+  }
+}
